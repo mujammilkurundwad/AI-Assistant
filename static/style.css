@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    min-height: 100vh;
+}
+
+
+/* MAIN HEADING */
+
+.main-heading {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 32px;
+}
+
+
+/* CONTAINER */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    gap: 25px;
+}
+
+
+/* CARD */
+
+.card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    font-size: 21px;
+}
+
+
+/* INPUT */
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    background: #0f172a;
+    color: white;
+    border: 1px solid #475569;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+input {
+    padding: 14px;
+}
+
+textarea {
+    min-height: 160px;
+    padding: 14px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #6366f1;
+}
+
+
+/* BUTTON */
+
+button {
+    border: none;
+    background: #6366f1;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #4f46e5;
+    transform: translateY(-1px);
+}
+
+
+/* TEXTAREA */
+
+textarea {
+    margin-bottom: 12px;
+    display: block;
+}
+
+
+/* LOADING */
+
+.loading {
+    display: none;
+    color: #94a3b8;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+
+/* RESPONSE */
+
+.response {
+    margin-top: 20px;
+    padding: 18px;
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    min-height: 20px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .main-heading {
+        font-size: 25px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
